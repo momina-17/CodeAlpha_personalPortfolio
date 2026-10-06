@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Momina Arshad - Computer Science student, aspiring Web Developer & Graphic Designer based in Gujranwala, Pakistan.">
+  <title>MominaArshad | Portfolio</title>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- External JavaScript (deferred for performance) -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#home" class="nav-logo" aria-label="Momina Arshad Home">
+        <span class="logo-text">Momina Arshad</span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle Button -->
+      <button 
+        type="button" 
+        class="menu-toggle" 
+        id="menu-toggle" 
+        aria-label="Toggle navigation menu" 
+        aria-expanded="false" 
+        aria-controls="nav-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
+      <!-- 3D visual / background canvas container for Three.js or WebGL -->
+      <div class="hero-visual-container" id="hero-canvas-container" aria-hidden="true"></div>
+
+      <!-- Floating decorative shapes/elements for JavaScript animation -->
+      <div class="hero-decorations" aria-hidden="true">
+        <span class="decor-element decor-1"></span>
+        <span class="decor-element decor-2"></span>
+        <span class="decor-element decor-3"></span>
+      </div>
+
+      <div class="hero-content-wrapper">
+        <div class="hero-text-content">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name" id="hero-heading">Momina Arshad</h1>
+          <p class="hero-role">Web Developer &amp; Graphic Designer</p>
+          <p class="hero-intro">
+            Computer Science student passionate about building clean, responsive web interfaces and creating purposeful digital visual designs.
+          </p>
+          <p class="hero-location">
+            <span class="location-icon" aria-hidden="true">📍</span> Gujranwala, Pakistan
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="assets/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="profile-image-container">
+            <img 
+              src="assets/profile.jpg" 
+              alt="Portrait of Momina Arshad" 
+              class="profile-image" 
+              width="400" 
+              height="400" 
+              loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about-section" id="about" aria-labelledby="about-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <p class="section-badge">Get To Know Me</p>
+          <h2 class="section-title" id="about-heading">About Me</h2>
+        </header>
+
+        <div class="about-content">
+          <div class="about-text-column">
+            <h3 class="about-subtitle">Building Technical Solutions with a Creative Perspective</h3>
+            <p class="about-description">
+              I am a Computer Science student dedicated to mastering programming, software logic, and frontend website development. My goal is to apply technical and creative principles to build scalable web products, work toward establishing my own business, and achieve long-term financial independence.
+            </p>
+            <p class="about-description">
+              Outside of core software development, I draw balance and creative inspiration from calligraphy and nature, which actively informs my appreciation for typography, composition, and user-centered design.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <h4 class="pillar-title">Personal Interests</h4>
+                <p class="pillar-text">Software engineering, website development, traditional calligraphy, and the natural world.</p>
+              </div>
+              <div class="pillar-card">
+                <h4 class="pillar-title">Career Aspirations</h4>
+                <p class="pillar-text">Aspiring entrepreneur focused on technology-driven ventures and building sustainable digital solutions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight / Focus Cards -->
+          <div class="about-highlights-grid" aria-label="Key Competencies">
+            <div class="highlight-card">
+              <span class="highlight-icon" aria-hidden="true">💻</span>
+              <h4 class="highlight-title">Frontend Development</h4>
+              <p class="highlight-caption">Building accessible, responsive user interfaces with semantic code.</p>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-icon" aria-hidden="true">⚙️</span>
+              <h4 class="highlight-title">Programming</h4>
+              <p class="highlight-caption">Applying computational logic, algorithms, and clean architecture.</p>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-icon" aria-hidden="true">🎨</span>
+              <h4 class="highlight-title">Creative Design</h4>
+              <p class="highlight-caption">Crafting visual brand identities, digital assets, and layouts.</p>
+            </div>
+
+            <div class="highlight-card">
+              <span class="highlight-icon" aria-hidden="true">📚</span>
+              <h4 class="highlight-title">Continuous Learning</h4>
+              <p class="highlight-caption">Steadily expanding Computer Science fundamentals and modern tooling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <p class="section-badge">Capabilities</p>
+          <h2 class="section-title" id="skills-heading">Technical &amp; Creative Skills</h2>
+        </header>
+
+        <div class="skills-categories-grid">
+
+          <!-- Category 1: Frontend Development -->
+          <div class="skill-category-card" id="category-frontend">
+            <h3 class="category-title">Frontend Development</h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <p class="skill-desc">Semantic document markup, accessibility standards, and SEO best practices.</p>
+                </div>
+                <!-- Progress container for JS/CSS animation -->
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="html">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3</span>
+                  <p class="skill-desc">Modern responsive layout structures, Flexbox, Grid, and design systems.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="css">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <p class="skill-desc">DOM manipulation, interactive browser features, and asynchronous logic.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="javascript">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Programming -->
+          <div class="skill-category-card" id="category-programming">
+            <h3 class="category-title">Programming</h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C++</span>
+                  <p class="skill-desc">Core syntax, memory management concepts, and structural programming.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="cpp">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Structures &amp; Algorithms</span>
+                  <p class="skill-desc">Problem solving, algorithmic efficiency, and foundational data storage models.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="dsa">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Object-Oriented Programming</span>
+                  <p class="skill-desc">Encapsulation, inheritance, polymorphism, and modular software design.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="oop">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Database -->
+          <div class="skill-category-card" id="category-database">
+            <h3 class="category-title">Database</h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Database</span>
+                  <p class="skill-desc">Data organization, relational database foundations, and query principles.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="database">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Design -->
+          <div class="skill-category-card" id="category-design">
+            <h3 class="category-title">Design</h3>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Graphic Design</span>
+                  <p class="skill-desc">Visual composition, hierarchy, color theory, and digital graphics creation.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="graphic-design">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Canva</span>
+                  <p class="skill-desc">Rapid branding assets, promotional graphics, templates, and social media presentation.</p>
+                </div>
+                <div class="skill-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" data-level="canva">
+                  <div class="skill-progress-fill"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <p class="section-badge">Selected Work</p>
+          <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Tic Tac Toe Game -->
+          <article class="project-card" id="project-tictactoe">
+            <div class="project-media">
+              <img 
+                src="assets/project-tictactoe.jpg" 
+                alt="Screenshot placeholder for Tic Tac Toe Game" 
+                class="project-image" 
+                width="600" 
+                height="380" 
+                loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Tic Tac Toe Game</h3>
+              <p class="project-description">
+                Interactive browser game demonstrating game state management, win-condition checking algorithms, and user interaction.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Email Filtering -->
+          <article class="project-card" id="project-email-filtering">
+            <div class="project-media">
+              <img 
+                src="assets/project-email-filtering.jpg" 
+                alt="Screenshot placeholder for Email Filtering project" 
+                class="project-image" 
+                width="600" 
+                height="380" 
+                loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Email Filtering</h3>
+              <p class="project-description">
+                A project exploring data organization, sorting rules, and keyword-based filtering logic for email categorization.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag">C++</li>
+                <li class="tag">DSA</li>
+                <li class="tag">OOP</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Engine -->
+          <article class="project-card" id="project-engine">
+            <div class="project-media">
+              <img 
+                src="assets/project-engine.jpg" 
+                alt="Screenshot placeholder for Engine project" 
+                class="project-image" 
+                width="600" 
+                height="380" 
+                loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Engine</h3>
+              <p class="project-description">
+                Core computational or simulation engine project focusing on system architecture, process execution, and structural logic.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag">C++</li>
+                <li class="tag">OOP</li>
+                <li class="tag">Algorithms</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: E-Commerce Website / Amazon Clone -->
+          <article class="project-card" id="project-amazon">
+            <div class="project-media">
+              <img 
+                src="assets/project-amazon.jpg" 
+                alt="Screenshot placeholder for E-Commerce Website / Amazon Clone" 
+                class="project-image" 
+                width="600" 
+                height="380" 
+                loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Website / Amazon Clone</h3>
+              <p class="project-description">
+                Front-facing web storefront inspired by modern online shopping platforms, featuring product cards, navigation, and cart layout.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: AI Assistant -->
+          <article class="project-card" id="project-ai-assistant">
+            <div class="project-media">
+              <img 
+                src="assets/project-ai-assistant.jpg" 
+                alt="Screenshot placeholder for AI Assistant project" 
+                class="project-image" 
+                width="600" 
+                height="380" 
+                loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">AI Assistant</h3>
+              <p class="project-description">
+                Conversational assistant interface designed for prompt input, query handling, and structured response displays.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag">JavaScript</li>
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Landing Page -->
+          <article class="project-card" id="project-landing-page">
+            <div class="project-media">
+              <img 
+                src="assets/project-landing-page.jpg" 
+                alt="Screenshot placeholder for Landing Page project" 
+                class="project-image" 
+                width="600" 
+                height="380" 
+                loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Landing Page</h3>
+              <p class="project-description">
+                Modern responsive landing page featuring strategic call-to-action sections, clean typography, and optimized layout flow.
+              </p>
+              <ul class="project-tags" aria-label="Technologies used">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">Graphic Design</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESUME SECTION ==================== -->
+    <section class="resume-section" id="resume" aria-labelledby="resume-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <p class="section-badge">Curriculum Vitae</p>
+          <h2 class="section-title" id="resume-heading">Resume</h2>
+        </header>
+
+        <div class="resume-card">
+          <div class="resume-text">
+            <h3 class="resume-title">Academic &amp; Technical Credentials</h3>
+            <p class="resume-intro">
+              View or download my full resume for a comprehensive breakdown of my academic coursework, technical skills, projects, and learning trajectory.
+            </p>
+          </div>
+
+          <div class="resume-actions">
+            <a href="assets/resume.pdf" class="btn btn-primary" download="Momina-Arshad-Resume.pdf">Download Resume</a>
+            <a href="assets/resume.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-container">
+        <header class="section-header">
+          <p class="section-badge">Get In Touch</p>
+          <h2 class="section-title" id="contact-heading">Contact Me</h2>
+          <p class="section-subtitle">
+            Whether you have an inquiry, collaboration idea, or freelance opportunity, feel free to reach out.
+          </p>
+        </header>
+
+        <div class="contact-layout">
+
+          <!-- Contact Details & External Profiles -->
+          <div class="contact-info-panel">
+            <h3 class="panel-title">Direct Information</h3>
+            
+            <ul class="contact-details-list">
+              <li class="contact-detail-item">
+                <span class="detail-label">Email:</span>
+                <a href="mailto:placeholder@example.com" class="detail-link">iimomina17@gmail.com</a>
+              </li>
+              <li class="contact-detail-item">
+                <span class="detail-label">Phone:</span>
+                <a href="tel:+920000000000" class="detail-link">+92 3010610431</a>
+              </li>
+              <li class="contact-detail-item">
+                <span class="detail-label">Location:</span>
+                <span class="detail-text">Gujranwala, Pakistan</span>
+              </li>
+            </ul>
+
+            <h4 class="profiles-heading">Professional &amp; Freelance Profiles</h4>
+            <ul class="social-links-list" aria-label="Social and freelance profiles">
+              <li><a href="https://www.linkedin.com/in/momina-arshad-686955430/" class="profile-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/momina-17" class="profile-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://www.fiverr.com/s/zAAWVQo" class="profile-link" target="_blank" rel="noopener noreferrer">Fiverr</a></li>
+              <li><a href="https://www.upwork.com/freelancers/~017fe42ecb97733968?mp_source=share" class="profile-link" target="_blank" rel="noopener noreferrer">Upwork</a></li>
+              <li><a href="https://www.freelancer.com/get/WebDigitalCore?f=give" class="profile-link" target="_blank" rel="noopener noreferrer">Freelancer</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-panel">
+            <form action="#" method="POST" class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name <span class="required" aria-hidden="true">*</span></label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  class="form-input" 
+                  placeholder="Your full name" 
+                  required 
+                  autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  class="form-input" 
+                  placeholder="name@example.com" 
+                  required 
+                  autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject <span class="required" aria-hidden="true">*</span></label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  class="form-input" 
+                  placeholder="What is this regarding?" 
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  class="form-textarea" 
+                  rows="5" 
+                  placeholder="Write your message here..." 
+                  required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <p class="footer-name">Momina Arshad</p>
+        <p class="footer-tagline">Web Developer &amp; Graphic Designer</p>
+      </div>
+
+      <ul class="footer-social-links" aria-label="Footer social links">
+        <li><a href="https://www.linkedin.com/in/momina-arshad-686955430/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="https://github.com/momina-17" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.fiverr.com/s/zAAWVQo" target="_blank" rel="noopener noreferrer">Fiverr</a></li>
+        <li><a href="https://www.upwork.com/freelancers/~017fe42ecb97733968?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork</a></li>
+        <li><a href="https://www.freelancer.com/get/WebDigitalCore?f=give" target="_blank" rel="noopener noreferrer">Freelancer</a></li>
+      </ul>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Momina Arshad. All rights reserved.</p>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+          <span aria-hidden="true">&uarr;</span> Back to Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
